@@ -31,6 +31,14 @@ public class Test2_Asociaciones_ManyToMany {
 		emanager.getTransaction().commit();
 		
 		
+		emanager.getTransaction().begin();
+		//un socio que alquila un libro
+		l2.addSocio(s1);
+		l3.addSocio(s1);
+		l1.addSocio(s1);
+		
+		emanager.getTransaction().commit();
+		
 		
 		
 		
