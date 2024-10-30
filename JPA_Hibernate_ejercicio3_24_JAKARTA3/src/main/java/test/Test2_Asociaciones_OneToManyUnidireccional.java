@@ -46,7 +46,7 @@ public class Test2_Asociaciones_OneToManyUnidireccional {
 			//creo un empleado1
 			e1.setPlaza(p1); //asigno plaza
 			p1.setEmpleado(e1);//bidireccionalididad -------------- IMPORTANTE
-			ef.create(e1); //presiste
+			ef.create(e1); //persiste
 			
 			e2.setPlaza(p2);
 			p2.setEmpleado(e2);

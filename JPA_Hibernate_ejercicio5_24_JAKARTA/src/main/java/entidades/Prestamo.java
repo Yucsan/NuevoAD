@@ -18,7 +18,6 @@ public class Prestamo implements Serializable {
 	private PrestamoPK id;
 
 	//bi-directional many-to-one association to Libro
-	//, insertable=false, updatable=false
 	@ManyToOne
 	@JoinColumn(name="isbn")
 	private Libro libro;

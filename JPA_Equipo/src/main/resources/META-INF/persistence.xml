@@ -9,16 +9,16 @@
 			<property name="jakarta.persistence.jdbc.driver"
 				value="com.mysql.cj.jdbc.Driver" />
 			<property name="jakarta.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/ejercicio5" />
+				value="jdbc:mysql://localhost:3306/equipo" />
 			<property name="jakarta.persistence.jdbc.user"
 				value="usuario" />
 			<property name="jakarta.persistence.jdbc.password"
 				value="usuario" />
 			<property
 				name="jakarta.persistence.schema-generation.database.action"
-				value="update" /> <!-- comprueba que el diseño es correcto segun mis entidades y si true continua -->
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.format_sql" value="true"/>
+				value="validate" /> <!-- comprueba que el diseño es correcto segun mis entidades y si true continua -->
+			<property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.format_sql" value="false"/>
 		</properties>
 	</persistence-unit>
 </persistence>
