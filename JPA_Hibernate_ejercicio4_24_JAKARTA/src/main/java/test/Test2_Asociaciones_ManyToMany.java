@@ -40,21 +40,9 @@ public class Test2_Asociaciones_ManyToMany {
 		emanager.getTransaction().commit();
 		
 		
-		
-		
-		
-		
-		
 		//se recomienda cerrar
 		emanager.close();
 		emfactory.close();
-			
-		
-			
-			
-			
-			
-			
 			
 	}
 

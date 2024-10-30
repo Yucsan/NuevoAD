@@ -16,7 +16,7 @@
 				value="usuario" />
 			<property
 				name="jakarta.persistence.schema-generation.database.action"
-				value="create" />
+				value="validate" /> <!-- comprueba que el diseño es correcto segun mis entidades y si true continua -->
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>
 		</properties>
