@@ -15,5 +15,7 @@ public class DireccionFacadeImpl extends AbstractFacadeJPAImpl<Direccion> {
 		TypedQuery<Direccion> q = em.createQuery("SELECT p FROM Direccion as p",Direccion.class);
 		return q.getResultList();
 	}
+	
+	
 
 }

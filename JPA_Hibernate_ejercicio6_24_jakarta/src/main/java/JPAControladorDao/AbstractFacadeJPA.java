@@ -1,5 +1,8 @@
 package JPAControladorDao;
 
+import java.util.List;
+
+import entidades.Proyecto;
 import jakarta.persistence.EntityManager;
 
 public interface AbstractFacadeJPA<T> {

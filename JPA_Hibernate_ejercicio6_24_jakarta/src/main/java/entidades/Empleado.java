@@ -7,6 +7,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
@@ -17,10 +18,18 @@ uniqueConstraints= { @UniqueConstraint(columnNames="CODEMPLEADO"), @UniqueConstr
 
 @Entity
 @Table(name="EMPLEADO" , catalog="ejercicio6")
-public class Empleado implements Serializable {
 
+//consultas estáticas
+	@NamedQuery(name="Empleado.findAll", query="SELECT e FROM Empleado e")
+
+	//findAll es la que el genera 
+
+public class Empleado implements Serializable {	
 	// atributos //
 	private static final long serialVersionUID = 1L;
+	
+	public static final String BUSCAR_TODOS_EMPLEADOS = "Empleado.findAll";
+	
 	
 	@Id // clave principal o primary key
 	@Column(name="CODEMPLEADO", unique= true, nullable=false)
